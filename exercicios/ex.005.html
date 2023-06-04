@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background: rgb(190, 17, 17);
+            color: rgb(5, 3, 3);
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com o DOM</h1>
+    <p>Aqui vai o resultado </p>
+    <p>Aprendendo a usar o<strong> <abbr title="Document Objetc Model">DOM</abbr></strong> no JavaSscript.</p>
+    <div>Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p = window.document.getElementsByTagName('p')[0]
+        window.document.write('ESTOU SALVANDO AS COISAS PARA O GITHUB')
+        corpo.style.background = 'white'
+        p.style.color = 'blue'
+    </script>
+</body>
+</html>
